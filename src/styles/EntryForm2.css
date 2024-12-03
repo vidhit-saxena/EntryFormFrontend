@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Global Styles */
+body {
+    background-image: url(../assets/images/background2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.head {
+    width: 100%;
+    background: rgba(193, 201, 38, 0.85); /* Semi-transparent overlay */
+    border-radius: 12px;
+    color: #333;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.head h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.head h4, .head h5, .head h6 {
+    color: #333;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 750px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Form Header */
+.form-header {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+.form-label {
+    color: #FF5733;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    padding: 12px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: #FF5733;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.3);
+    outline: none;
+}
+
+/* Pass Container */
+.pass-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pass Row Styling */
+.pass-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pass-row:hover {
+    transform: scale(1.02);
+}
+
+/* Pass Info */
+.pass-info h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pass-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Custom Input Group */
+.input-group-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Button Styling */
+.btn-custom {
+    background: linear-gradient(135deg, #ff5733, #ff8c42);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(135deg, #ff8c42, #ff5733);
+    transform: scale(1.1);
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #FF5733 !important;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+    background-color: #e64e1b !important;
+}
+
+/* Responsive Design */
+@media (min-width: 992px) {
+    .form-container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-header {
+        font-size: 1.2rem;
+    }
+
+    .head h1 {
+        font-size: 1.8rem;
+    }
+
+    .entry-payment-info p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* Container styling */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  /* Form Elements */
+  label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

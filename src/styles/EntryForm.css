@@ -1,0 +1,388 @@
+/* Base styles for the body and form container */
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body {
+    /* background: linear-gradient(to bottom, #fb6c4c, #f95c23); */
+    background-image: url(../assets/imaages/finalBackground.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header section with image */
+.head {
+    width: 100%;
+    position: relative;
+    /* background-color: #b53b23;  */
+    background-color: rgba(193, 201, 38, 0.8); /* Adjust the opacity as needed */
+    border-radius: 8px;
+    color: #fff;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head h5, .head h6, .head h1, .head h4 {
+    margin: 5px 0;
+}
+
+.form-container {
+    max-width: 700px;
+    width: 100%;
+    background: rgba(240, 244, 164, 0.8);
+    /* background: #f1f5fa; */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 20px; /* Margin to add spacing on smaller screens */
+}
+
+
+/* Form Header */
+.form-header {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.form-label {
+    color: #FF5733;
+    font-weight: 700;
+}
+
+/* General container styling */
+.pass-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling each pass row */
+.pass-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling pass information */
+.pass-info h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pass-info p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Custom input group styling */
+.input-group-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styling */
+.btn-custom {
+    background: linear-gradient(135deg, #ff5733, #ff8c42);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(135deg, #ff8c42, #ff5733);
+    transform: scale(1.1);
+}
+.form-control{
+    /* background-color: transparent; */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly increase opacity on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/* Custom input styling */
+.form-control-custom {
+    width: 60px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    /* background-color: #fff; */
+    background-color: transparent;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Payment and QR code section */
+.entry-payment-info h5 {
+    font-weight: 600;
+    color: #FF5733;
+}
+
+.entry-payment-info p {
+    font-size: 0.9rem;
+}
+
+.qr-code img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.form-check-label {
+    font-size: 0.85rem;
+    color: #333;
+}
+
+/* Support section */
+.support p {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.support a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+.support a:hover {
+    text-decoration: underline;
+}
+
+.para {
+    font-size: 14px;
+}
+
+.entry-payment-info h5 {
+    font-weight: 700;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #FF5733 !important;
+    border: none !important;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #e64e1b !important;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 992px) {
+    .form-container {
+        max-width: 800px; /* Expanding form width for large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .head h1, .head h4 {
+        font-size: 1.5rem;
+    }
+
+    .form-header {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .head .overlay {
+        padding: 10px;
+    }
+
+    .head h1 {
+        font-size: 1.25rem;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .form-header h1 {
+        font-size: 1rem;
+    }
+
+    .entry-payment-info p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Input group buttons */
+/* .input-group button {
+    background-color: #FF5733;
+    color: #fff;
+} */
+
+/* .input-group button:hover {
+    background-color: #e64e1b;
+} */
+
+
+/*
+.body{
+    background: linear-gradient(to bottom, #FF5733, #c73b09); 
+    background-size: cover;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f1f5fa;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.head {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('/path/to/your/background-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+Overlay for translucency
+.head .overlay {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+Text styling
+.head h5, .head h6, .head h1, .head h4 {
+    margin: 5px 0;
+}
+
+.form-label {
+    color: #FF5733;
+    font-weight: 700;
+}
+
+.form-header {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    border-radius: 10px ;
+}
+
+.input-group button {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+.input-group button:hover {
+    background-color: #e64e1b;
+}
+
+.entry-payment-info h5 {
+    font-weight: 600;
+    color: #FF5733;
+}
+
+.entry-payment-info p {
+    font-size: 0.9rem;
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.form-check-label {
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #FF5733 !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #e64e1b !important;
+}
+
+.support p {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.support a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+.support a:hover {
+    text-decoration: underline;
+}
+
+.para {
+    font-size: 14px;
+}
+
+.entry-payment-info h5 {
+    font-weight: 700;
+}
+*/
+
